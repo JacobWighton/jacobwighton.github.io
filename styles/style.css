@@ -207,3 +207,12 @@ main {
   text-decoration: none;
 }
 
+/* Show full name by default, hide short name */
+.full-name { display: inline; }
+.short-name { display: none; }
+
+/* On small screens, reverse it */
+@media (max-width: 600px) {
+  .full-name { display: none; }
+  .short-name { display: inline; }
+}
