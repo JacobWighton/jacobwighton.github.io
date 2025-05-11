@@ -32,15 +32,17 @@ main {
   border-bottom: 1px solid #ddd;
 }
 
-.name {
+.name a {
   font-weight: bold;
   font-size: 2rem;
+  color: #000;
+  text-decoration: none;
 }
 
 .right-links a {
   margin-left: 1rem;
   color: #777;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
