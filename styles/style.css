@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,10 +20,13 @@ body {
 
 }
 
+
 main {
   flex: 1;
 }
 
+
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,6 +54,19 @@ main {
   color: #000;
 }
 
+/* Show full name by default, hide short name */
+.full-name { display: inline; }
+.short-name { display: none; }
+
+/* On small screens, reverse it */
+@media (max-width: 600px) {
+  .full-name { display: none; }
+  .short-name { display: inline; }
+}
+
+
+
+/* HERO */
 .hero {
   display: flex;
   flex-direction: column;
@@ -57,18 +74,6 @@ main {
   text-align: center;
   color: #fff;
   padding: 2rem 1rem;
-}
-
-.hero-vexed {
-  background: linear-gradient(135deg, #d32f2f, #0d47a1);
-}
-
-.hero-swatch-cropper {
-  background: linear-gradient(135deg, #DE5A08, #FFC524);
-}
-
-.hero-footer-page {
-  background: linear-gradient(135deg, #222, #555);
 }
 
 
@@ -88,6 +93,8 @@ main {
   font-weight: bold;
 }
 
+
+/* BODY */
 .features {
   display: grid;
   /* Two equal-width columns, and no more */
@@ -113,6 +120,11 @@ main {
   text-align: center;
 }
 
+.app-card {
+  color: #fff;
+  text-decoration: none;
+}
+
 .icon {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -134,9 +146,11 @@ main {
   font-size: 0.95rem;
   color: #555;
   }
+
+
   
-  
-  .footer {
+/* FOOTER */
+.footer {
   display: flex;
   justify-content: center;
   padding: 1rem 2rem;
@@ -155,7 +169,7 @@ main {
 }
 
 
-
+/* POLICY */
 .policy {
   max-width: 800px;
   margin: 2rem auto;
@@ -207,12 +221,18 @@ main {
   text-decoration: none;
 }
 
-/* Show full name by default, hide short name */
-.full-name { display: inline; }
-.short-name { display: none; }
 
-/* On small screens, reverse it */
-@media (max-width: 600px) {
-  .full-name { display: none; }
-  .short-name { display: inline; }
+
+/* BACKGROUNDS */
+
+.bg-gradient-vexed {
+  background: linear-gradient(135deg, #d32f2f, #0d47a1);
+}
+
+.bg-gradient-swatch-cropper {
+  background: linear-gradient(135deg, #DE5A08, #FFC524);
+}
+
+.bg-gradient-footer-page {
+  background: linear-gradient(135deg, #222, #555);
 }
