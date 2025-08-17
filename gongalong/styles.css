@@ -85,8 +85,13 @@ body{
 .info-label{
   font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:#64748b;
 }
-.info-value{
-  font:800 1.25rem/1.2 Montserrat, Inter, sans-serif; margin-top:2px;
+.info-value {
+  font-weight: 800;
+  font-family: Montserrat, Inter, sans-serif;
+  line-height: 1.2;
+  margin-top: 2px;
+  white-space: nowrap;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
 }
 
 /* Sections */
