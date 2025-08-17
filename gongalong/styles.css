@@ -204,3 +204,9 @@ h4 {
   margin: 40px auto 0; /* center horizontally */
   text-align: center;  /* center the label */
 }
+
+@media (max-width: 700px) {
+  .header-cta {
+    display: none;
+  }
+}
